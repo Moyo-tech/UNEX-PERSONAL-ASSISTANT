@@ -94,10 +94,11 @@ def respond(voice_data):
         url = f"https://www.youtube.com/results?search_query={search_term}"
         webbrowser.get ().open ( url )
         speak ( f'Here is what I found for {search_term} on youtube' )
-
+        
+#to tell a joke
     if there_is(["joke"]):
         speak( pyjokes.get_joke () )
-
+#to exit the program
     if there_is(['exit', 'stop', 'go to sleep unex' ,'talk to you later unex', 'bye unex']):
         speak('going offline')
         exit()
